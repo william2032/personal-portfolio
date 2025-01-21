@@ -36,7 +36,7 @@ body {
   display: flex;
 }
 .nav_connect {
-  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 100%);
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 106.28%);
   border-radius: 20px;
   padding: 20px 40px;
   transition: 0.5s;
@@ -48,6 +48,60 @@ body {
 
 /* hero component  */
 .profile {
-  height: 80vh;
-  width: 70vw;
+  height: 70vh;
+  width: 50vw;
+  border: 1px solid black;
+  border-radius: 20%;
+  max-width: 100%;
+  margin-top: 100px;
+  object-fit: contain;
+}
+
+.hero {
+  align-items: center;
+}
+.hero h1 {
+  text-align: left;
+  max-width: 70%;
+  line-height: 1.45em;
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.hero p {
+  margin-top: 50px;
+  font-size: 21px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.hero h1 span {
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-action {
+  font-weight: 500;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.hero-connect {
+  padding: 15px 45px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 106.28%);
+}
+.hero-resume {
+  padding: 15px 60px;
+  border-radius: 50px;
+  border: 2px solid;
+}
+
+.hero-connect:hover {
+  border: 2px solid white;
+}
+.hero-resume:hover {
+  border-color: #b415ff;
 }
