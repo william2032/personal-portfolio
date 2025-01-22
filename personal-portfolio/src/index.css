@@ -3,7 +3,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   color-scheme: light dark;
   font-synthesis: none;
@@ -47,10 +46,11 @@ body {
 }
 
 /* hero component  */
+
 .profile {
   height: 70vh;
   width: 50vw;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 20%;
   max-width: 100%;
   margin-top: 100px;
@@ -104,4 +104,108 @@ body {
 }
 .hero-resume:hover {
   border-color: #b415ff;
+}
+
+/* about component */
+
+.about {
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+.about img {
+  height: 50%;
+  width: 40%;
+  border-right: 5px solid white;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+.about img:hover {
+  transition: 0.3s;
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+.about-title h1 {
+  font-size: 40px;
+  padding: 10px;
+  border-bottom: 5px solid #e87a14;
+  border-radius: 15px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.about-title h1:hover {
+  border-bottom: 5px solid #0154fa;
+  border-radius: 15px;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-section {
+  gap: 80px;
+}
+
+.about-skills {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-skill {
+  gap: 15px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.about-skill hr {
+  width: 50%;
+  outline: none;
+  height: 4px;
+  border-radius: 40px;
+  background: linear-gradient(264deg, #da7c25 -5.09%, #b923e1 106.28%);
+}
+
+.about-skill:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.about-achievement {
+  gap: 10px;
+  text-align: center;
+  transition: 0.5s;
+  border-bottom: 1px solid white;
+  padding: 25px 49px;
+}
+
+.about-achievement h1 {
+  font-size: 40px;
+  padding-right: 50px;
+  font-weight: 400;
+  background: linear-gradient(270deg, #da7c25 50.09%, #b923e1 70.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-achievement p {
+  font-size: 21px;
+  font-weight: 400;
+  padding-right: 50px;
+}
+
+.about-achievement hr {
+  width: 50%;
+  outline: none;
+}
+.about-achievement:hover {
+  transition: 0.5s;
+  transform: scale(1.15);
+  cursor: pointer;
+  border-bottom: 1px solid rgb(0, 130, 251);
 }

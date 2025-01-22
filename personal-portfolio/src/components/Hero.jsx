@@ -18,7 +18,7 @@ const Hero = () => {
                 </div>
             </div>
             {/* todo add my good photoshoot image */}
-            <div className="profile  overflow-hidden relative ">
+            <div className="profile overflow-hidden relative ">
                 <img src='#' alt="profile image" />
             </div>
         </section>
