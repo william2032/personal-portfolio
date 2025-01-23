@@ -1,10 +1,13 @@
 import logo from "./logo.jpg";
 import about from "./about.jpg"
-// import profile from "./profile.jpg"
-
+import rightarrow from "./rightarrow.svg"
+import uparrow from "./uparrow.svg"
+import down from "./down.svg"
 
 export {
     logo,
     about,
-    // profile,
+    rightarrow,
+    uparrow,
+    down,
 }
