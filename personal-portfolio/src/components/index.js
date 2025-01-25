@@ -4,6 +4,8 @@ import About from "./About";
 import Services from "./Services"
 import Work from "./Work";
 import Contact from "./Contact";
+import Footer from "./Footer";
+
 export {
     Navbar,
     Hero,
@@ -11,4 +13,5 @@ export {
     Services,
     Work,
     Contact,
+    Footer,
 }
