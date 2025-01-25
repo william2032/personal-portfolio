@@ -12,7 +12,7 @@ const Services = () => {
         setShowAll(!showAll)
     );
     return (
-        <section>
+        <section id='services'>
             <div className='max-w-screen-xl mx-auto flex flex-col justify-center  services'>
                 <div className=' font-semibold font-outfit services-title'>
                     <h1>My Services</h1>

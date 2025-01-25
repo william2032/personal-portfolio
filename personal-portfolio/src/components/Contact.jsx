@@ -2,8 +2,35 @@ import React from 'react'
 import { gmail, location, phone } from '../assets'
 
 const Contact = () => {
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "80637bf6-57cb-4661-b552-a6d9d51fe54a");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+
+            setResult("Form Submitted Successfully");
+            alert("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+
+    };
     return (
-        <section >
+        <section id='contact'>
             <div className='max-w-screen-xl mx-auto flex flex-col justify-center contact'>
                 <div>
                     <h1 className='contact-title'>Get in touch</h1>
@@ -28,7 +55,7 @@ const Contact = () => {
                         </div>
                     </div>
                     {/* todo add email feature */}
-                    <form className='contact-right flex  flex-col text-start gap-[30px] font'>
+                    <form onSubmit={onSubmit} className='contact-right flex  flex-col text-start gap-[30px] font'>
                         <label htmlFor="">Your Name</label>
                         <input type="text" name="name" placeholder='Enter your name' />
                         <label htmlFor="">Your Email</label>

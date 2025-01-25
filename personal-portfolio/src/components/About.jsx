@@ -4,7 +4,7 @@ import 'animate.css';
 
 const About = () => {
     return (
-        <section className="max-w-screen-xl  flex flex-col  about">
+        <section className="max-w-screen-xl  flex flex-col  about" id="about">
             <div className="about-title cursor-pointer ">
                 <h1 >About Me</h1>
             </div>
