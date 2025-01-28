@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <section className='max-w-screen-xl mx-auto overflow-hidden flex flex-row justify-between hero' id='home'>
+        <section className='md:max-w-screen-xl mx-auto overflow-hidden flex flex-row justify-between hero' id='home'>
             <div className='flex flex-col '>
                 <h1 >
                     <span>I'm  William Kivindu,</span>  frontend  developer based in Kenya. </h1>

@@ -6,7 +6,8 @@ import down from "./down.svg"
 import gmail from "./gmail.svg"
 import phone from "./phone.png"
 import location from "./location.png"
-
+import menu from "./menu.svg"
+import close from "./close.svg"
 
 export {
     logo,
@@ -17,4 +18,6 @@ export {
     gmail,
     phone,
     location,
+    menu,
+    close,
 }

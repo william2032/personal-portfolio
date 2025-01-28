@@ -16,6 +16,7 @@ body {
   background: #161513;
   scroll-behavior: smooth;
   color: white;
+  max-width: 100%;
 }
 
 .navbar {
@@ -407,4 +408,35 @@ body {
   border-color: #b415ff;
   transform: scale(0.9);
   transition: 0.3;
+}
+
+/* mobile view */
+
+/* navbar */
+
+/* hero */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 20px;
+    margin-top: 50px;
+    width: 60%;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .hero p {
+    font-size: 16px;
+    width: 70%;
+    line-height: 27px;
+    text-align: center;
+    margin: 30px 0px;
+  }
+  .hero-action {
+    gap: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 45px;
+  }
+  .hero-connect {
+    padding: 20px 20px;
+  }
 }
